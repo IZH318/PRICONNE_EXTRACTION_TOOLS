@@ -1,4 +1,4 @@
-# 프린세스 커넥트! Re:Dive Asset 추출기 (개발중)
+# 프린세스 커넥트! Re:Dive Asset 추출기 (개발 및 수정중)
 게임 '프린세스 커넥트! Re:Dive'의 원본 Asset을 다운로드 받은 후 Resource를 추출 및 변환하는 도구입니다.
 
 (* 미처 발견하지 못한 오류가 있을 수 있습니다.)
@@ -53,8 +53,7 @@
 
 
 2. 01_Install 폴더로 이동 후 본문 상단 필수 요구사항과 선택 사항을 참고하여 파일을 설치합니다.<br>
-![2024-03-23 21 07 37](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/d3ebf8ce-080e-49c0-9f6b-3ebb3444e335)
-
+![2024-03-23 21 07 37](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/d3ebf8ce-080e-49c0-9f6b-3ebb3444e335) <br>
 ![2024-03-23 21 10 09](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/c7556e8e-76d8-4fe3-b074-3d26fa43425a) <br>
 [ ※ 주의 ] Add python.exe to PATH 에 반드시 체크 후 Install Now 클릭 <br>
 (* 미처 누르지 못했다면 설치파일을 다시 실행 또는 소프트웨어 제거 후 재 설치) <br> <br> <br>
@@ -131,7 +130,7 @@ movie2manifest | 108GB (115,967,754,240 바이트) | 파일 5,134, 폴더 3
 soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 
 ![_2024_03_23_21_15_29_34-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/025f37d3-648f-470f-83ad-e6ecf3f67755) <br>
-(* Ex. banner2_assetmanifest manifest 파일 명 입력) <br>
+(* Ex. banner2_assetmanifest manifest 파일 명 입력) <br> <br>
 
 ![2024-03-23 21 34 48](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/c1cd31f9-8e3b-4d40-96b1-26c9546f8d05) <br>
 만약 위 사진처럼 예상치 못한 오류로 인해 작업이 중단 또는 멈춘다면 창을 닫고 다시 열어 다시 작업 해 주시기 바랍니다. <br> <br>
@@ -164,8 +163,14 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 
 
 
-## TODO
+## TODO (ORG)
 - Extract from DMM install
 - Make the tool more user friendly
 - Add more configs
-- Remove dependecies
+- Remove dependecies <br> <br> <br>
+
+
+
+## Special Thanks to
+★ https://github.com/lskyset <br>
+★ Princess Connect! Re:Dive Game Users <br>
