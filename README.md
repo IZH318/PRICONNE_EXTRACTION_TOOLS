@@ -50,7 +50,8 @@
 01. zip 파일 다운로드 후 적절한 위치에 압축 해제 합니다.<br>
 ![2024-03-23 21 07 06](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/d8c0bd93-36fe-44be-afe1-e6b814415a52) <br> <br> <br>
 
-#### 파일 다운로드는 상단 쥬얼 아이콘을 클릭하십시오. <br> <br> <br>
+[![icon_item_91001](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/89c074f2-f869-4377-8e10-fc6a1d7e5de4)](https://github.com/IZH318/priconne-asset-extractor/releases)
+#### 파일 다운로드는 상단 쥬얼 아이콘을 클릭 또는 Releases로 이동하십시오. <br> <br> <br>
 
 
 
