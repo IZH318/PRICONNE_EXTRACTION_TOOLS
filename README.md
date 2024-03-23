@@ -88,7 +88,7 @@
 
 
 8. 02_Priconne_Original_Resource_Download_to_Convert.py 파일을 실행하여 다운로드 및 변환 할 manifest 정보를 입력하고 Enter키를 누릅니다.<br>
-   **( ※ manifest 파일 별 필요 최소 저장장치 용량은 아래 표를 참고하십시오. (2024-03-23 AM 02:20 기준))** <br> <br>
+   **( ※ manifest 파일 별 필요 최소 저장장치 용량은 아래 표를 참고하십시오. (2024-03-23 AM 02:20 기준, 오차 있을 수 있음))** <br> <br>
 ![2024-03-23 21 13 40](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/657ac134-e740-4914-9094-bfe64fd1dfab) <br>
 ![2024-03-23 21 13 58](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/3e2b1fce-0ba5-4152-bc4e-ead27f5030ba) <br> <br>
 
@@ -136,6 +136,19 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 ㄴ \v | 177GB (190,203,895,808 바이트) | 파일 292,452, 폴더 3
 
 <br>
+
+| 구분 | 디스크 할당 크기 | 내용 |
+| --- | --- | --- |
+원본 파일 삭제 한 전체 파일 크기 | 275GB (295,939,731,456 바이트) | 파일 367,270, 폴더 23,824
+원본 파일 삭제 안 한 전체 파일 크기 | 363GB (389,966,929,920 바이트) | 파일 449,763, 폴더 23,862
+
+<br>
+
+※ 개인적인 추측(* 확실하지 않음)<br>
+\a = Asset<br>
+\b = BGM<br>
+\s = SE(Sound Effect)<br>
+\v = Voice<br><br>
  
 ![_2024_03_23_21_15_29_34-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/025f37d3-648f-470f-83ad-e6ecf3f67755) <br>
 (* Ex. banner2_assetmanifest manifest 파일 명 입력) <br> <br>
