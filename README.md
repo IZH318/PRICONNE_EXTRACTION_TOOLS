@@ -40,7 +40,7 @@
 
 ## 선택 사항 (\01_Install＼_Option 폴더)
 #### ( ※ zip 파일 내 제공 된 파일들을 사용하려는 경우 이 단계를 생략해도 됩니다.)<BR><BR>
-[파일명] K-Lite_Codec_Pack_1820_Mega.exe
+[파일명] K-Lite_Codec_Pack_1820_Mega.exe <BR>
 [URL] https://codecguide.com/download_k-lite_codec_pack_basic.htm <BR>
 [기능] Audio 및 Video 코덱 설치 (* 추출 된 Audio 또는 Video 파일이 정상적으로 재생되지 않을 시 설치)
 
@@ -49,6 +49,8 @@
 ## 사용 방법
 01. zip 파일 다운로드 후 적절한 위치에 압축 해제 합니다.<br>
 ![2024-03-23 21 07 06](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/d8c0bd93-36fe-44be-afe1-e6b814415a52) <br> <br> <br>
+
+#### 파일 다운로드는 상단 쥬얼 아이콘을 클릭하십시오. <br> <br> <br>
 
 
 
