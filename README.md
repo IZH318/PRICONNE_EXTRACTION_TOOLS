@@ -160,21 +160,23 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 ![2024-03-23 21 15 58](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/36d200ae-b3d2-46dc-b1bf-a613e4caa1ba) <br>
 작업이 성공적으로 끝나면 새로운 폴더와 함께 원본 파일 및 변환 된 파일을 확인할 수 있습니다. <br> <br> <br>
 
+## 선택 작업
+아래 내용은 필수 작업은 아니며, 필요에 따라 사용하시면 됩니다.<br> <br>
 
 
-**[선택작업]** 원본 Resource 파일을 모두 제거하려는 경우 03_Priconne_Original_Resource_Remover.bat 파일을 실행하여 원본 Resource 파일을 제거합니다.<br><br>
+**[선택 작업]** 원본 Resource 파일을 모두 제거하려는 경우 03_Priconne_Original_Resource_Remover.bat 파일을 실행하여 원본 Resource 파일을 제거합니다.<br><br>
 ![2024-03-23 21 16 09](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/23a983ed-5d14-445e-8b22-ff94c48fdffc) <br>
 ![_2024_03_23_21_40_55_699-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/138d888e-9da5-41ed-9871-ba3dd0ab1cf5) <br> <br> <br>
 
 
 
-**[선택작업]** 캐릭터 명을 모두 추출하고 싶다면 04_Find_Character_List.py 파일을 실행합니다.<br><br>
+**[선택 작업]** 캐릭터 명을 모두 추출하고 싶다면 04_Find_Character_List.py 파일을 실행합니다.<br><br>
 ![2024-03-23 21 17 06](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/218c4b3d-c335-49fb-8189-f66cea4085cd) <br>
 ![_2024_03_23_21_45_30_866-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/2914305b-b991-4b95-9c42-0e72141c17ad) <br> <br> <br>
 
 
 
-**[선택작업]** 입력 한 캐릭터명 전체 또는 일부를 기준으로 대사 정보 및 Audio 파일 정보를 찾고싶다면 05_Find_Character_Names_in_Storydata.py 파일을 실행합니다. <br>
+**[선택 작업]** 입력 한 캐릭터명 전체 또는 일부를 기준으로 대사 정보 및 Audio 파일 정보를 찾고싶다면 05_Find_Character_Names_in_Storydata.py 파일을 실행합니다. <br><br>
 ![2024-03-23 21 49 57](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/0ac69fab-c8b0-4316-8d75-d0120dd4b772) <br>
 ![SHANA_2024_03_23_21_50_37_194-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/a9da55db-3b00-441e-848d-17378091521c) <br>
 
