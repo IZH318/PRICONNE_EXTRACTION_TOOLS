@@ -5,8 +5,8 @@
 
 <BR>
 
-## 특징
-※ 반드시 온라인 환경에서 작업해야 합니다.
+## 주요 기능
+※ 반드시 온라인 환경에서 작업해야 합니다. (오프라인 환경은 고민 중 입니다...)
 
 ▶ {manifest_filter}에 입력 된 값을 기준으로 원본 Resource 파일을 다운로드 받습니다.<BR>
 (* 다운로드 되는 파일 정보는 다음과 같습니다.)
@@ -162,19 +162,19 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 
 
 
-9. **[선택사항]** 원본 Resource 파일을 모두 제거하려는 경우 03_Priconne_Original_Resource_Remover.bat 파일을 실행하여 원본 Resource 파일을 제거합니다.<br><br>
+**[선택작업]** 원본 Resource 파일을 모두 제거하려는 경우 03_Priconne_Original_Resource_Remover.bat 파일을 실행하여 원본 Resource 파일을 제거합니다.<br><br>
 ![2024-03-23 21 16 09](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/23a983ed-5d14-445e-8b22-ff94c48fdffc) <br>
 ![_2024_03_23_21_40_55_699-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/138d888e-9da5-41ed-9871-ba3dd0ab1cf5) <br> <br> <br>
 
 
 
-10. **[선택사항]** 캐릭터 명을 모두 추출하고 싶다면 04_Find_Character_List.py 파일을 실행합니다.<br><br>
+**[선택작업]** 캐릭터 명을 모두 추출하고 싶다면 04_Find_Character_List.py 파일을 실행합니다.<br><br>
 ![2024-03-23 21 17 06](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/218c4b3d-c335-49fb-8189-f66cea4085cd) <br>
 ![_2024_03_23_21_45_30_866-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/2914305b-b991-4b95-9c42-0e72141c17ad) <br> <br> <br>
 
 
 
-11. **[선택사항]** 입력 한 캐릭터명 전체 또는 일부를 기준으로 대사 정보 및 Audio 파일 정보를 찾고싶다면 05_Find_Character_Names_in_Storydata.py 파일을 실행합니다. <br>
+**[선택작업]** 입력 한 캐릭터명 전체 또는 일부를 기준으로 대사 정보 및 Audio 파일 정보를 찾고싶다면 05_Find_Character_Names_in_Storydata.py 파일을 실행합니다. <br>
 ![2024-03-23 21 49 57](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/0ac69fab-c8b0-4316-8d75-d0120dd4b772) <br>
 ![SHANA_2024_03_23_21_50_37_194-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/a9da55db-3b00-441e-848d-17378091521c) <br>
 
@@ -183,12 +183,14 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 
 
 
-
-## TODO (ORG)
-- Extract from DMM install
-- Make the tool more user friendly
-- Add more configs
-- Remove dependecies <br> <br> <br>
+## 해야 할 일
+- 출석
+- 콧코로 수첩
+- 지역
+- 이벤트 스토리
+- 던전
+- 아레나, 프레나
+- 클랜전
 
 
 
