@@ -55,7 +55,7 @@
 2. 01_Install 폴더로 이동 후 본문 상단 필수 요구사항과 선택 사항을 참고하여 파일을 설치합니다.<br>
 ![2024-03-23 21 07 37](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/d3ebf8ce-080e-49c0-9f6b-3ebb3444e335) <br>
 ![2024-03-23 21 10 09](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/c7556e8e-76d8-4fe3-b074-3d26fa43425a) <br>
-[ ※ 주의 ] Add python.exe to PATH 에 반드시 체크 후 Install Now 클릭 <br>
+**[ ※ 주의 ] Add python.exe to PATH 에 반드시 체크 후 Install Now 클릭 <br>**
 (* 미처 누르지 못했다면 설치파일을 다시 실행 또는 소프트웨어 제거 후 재 설치) <br> <br> <br>
 
 3. 모두 설치가 끝났다면 02_Tools 폴더로 이동합니다. <br>
@@ -64,7 +64,7 @@
 
 
 4. Priconne_Extractor.zip 파일을 압축 해제 합니다.<br>
-   [ ※ 주의 ] 모든 데이터들은 Priconne_Extractor.zip 파일을 압축 해제 한 경로에 저장됩니다. <br>
+   **[ ※ 주의 ] 모든 데이터들은 Priconne_Extractor.zip 파일을 압축 해제 한 경로에 저장됩니다.** <br>
    ![2024-03-23 21 11 31](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/328960d5-7a1d-4e5c-a1cb-054582b98dcd) <br> <br> <br>
 
 
@@ -85,7 +85,7 @@
 
 
 8. 02_Priconne_Original_Resource_Download_to_Convert.py 파일을 실행하여 다운로드 및 변환 할 manifest 정보를 입력하고 Enter키를 누릅니다.<br>
-   ( ※ manifest 파일 별 필요 최소 용량은 아래 표를 참고하십시오. (2024-03-23 AM 02:20 기준)) <br> <br>
+   **( ※ manifest 파일 별 필요 최소 저장장치 용량은 아래 표를 참고하십시오. (2024-03-23 AM 02:20 기준))** <br> <br>
 ![2024-03-23 21 13 40](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/657ac134-e740-4914-9094-bfe64fd1dfab) <br>
 ![2024-03-23 21 13 58](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/3e2b1fce-0ba5-4152-bc4e-ead27f5030ba) <br>
 
@@ -141,19 +141,19 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 
 
 
-9. [선택사항] 원본 Resource 파일을 모두 제거하려는 경우 03_Priconne_Original_Resource_Remover.bat 파일을 실행하여 원본 Resource 파일을 제거합니다.<br><br>
+9. **[선택사항]** 원본 Resource 파일을 모두 제거하려는 경우 03_Priconne_Original_Resource_Remover.bat 파일을 실행하여 원본 Resource 파일을 제거합니다.<br><br>
 ![2024-03-23 21 16 09](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/23a983ed-5d14-445e-8b22-ff94c48fdffc) <br>
 ![_2024_03_23_21_40_55_699-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/138d888e-9da5-41ed-9871-ba3dd0ab1cf5) <br> <br> <br>
 
 
 
-10. [선택사항] 캐릭터 명을 모두 추출하고 싶다면 04_Find_Character_List.py 파일을 실행합니다.<br><br>
+10. **[선택사항]** 캐릭터 명을 모두 추출하고 싶다면 04_Find_Character_List.py 파일을 실행합니다.<br><br>
 ![2024-03-23 21 17 06](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/218c4b3d-c335-49fb-8189-f66cea4085cd) <br>
 ![_2024_03_23_21_45_30_866-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/2914305b-b991-4b95-9c42-0e72141c17ad) <br> <br> <br>
 
 
 
-11. [선택사항] 입력 한 캐릭터명 전체 또는 일부를 기준으로 대사 정보 및 Audio 파일 정보를 찾고싶다면 05_Find_Character_Names_in_Storydata.py 파일을 실행합니다. <br>
+11. **[선택사항]** 입력 한 캐릭터명 전체 또는 일부를 기준으로 대사 정보 및 Audio 파일 정보를 찾고싶다면 05_Find_Character_Names_in_Storydata.py 파일을 실행합니다. <br>
 ![2024-03-23 21 49 57](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/0ac69fab-c8b0-4316-8d75-d0120dd4b772) <br>
 ![SHANA_2024_03_23_21_50_37_194-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/a9da55db-3b00-441e-848d-17378091521c) <br>
 
