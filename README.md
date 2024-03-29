@@ -12,7 +12,7 @@
   - Audio (*.awb, *.acb)
   - Video (*.usm)<BR><BR><BR>
 
-■ {manifest_filter}에 입력 된 값을 기준으로 모든 원본 Resource가 다운로드 됐다면 원본 파일을 변환합니다. <BR>
+■ `{manifest_filter}`에 입력 된 값을 기준으로 모든 원본 Resource가 다운로드 됐다면 원본 파일을 변환합니다. <BR>
 (* 확장자 별 변환 과정은 다음과 같습니다.)
   - *.unity3d -> *.png, *.txt
   - *.awb, *.acb -> *.wav
