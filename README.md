@@ -5,14 +5,14 @@
 
 <BR>
 
-## 주요 기능
-▶ {manifest_filter}에 입력 된 값을 기준으로 원본 Resource 파일을 다운로드 받습니다.<BR>
+## 🔍 주요 기능
+■ 가장 먼저 {manifest_filter}에 입력 된 값을 기준으로 원본 Resource 파일을 다운로드 받습니다.<BR>
 (* 다운로드 되는 파일 정보는 다음과 같습니다.)
   - Assetbundles (*.unity3d)
   - Audio (*.awb, *.acb)
   - Video (*.usm)<BR><BR><BR>
 
-▶ 다운로드 된 원본 파일을 변환합니다.<BR>
+■ {manifest_filter}에 입력 된 값을 기준으로 모든 원본 Resource가 다운로드 됐다면 원본 파일을 변환합니다.<BR>
 (* 확장자 별 변환 과정은 다음과 같습니다.)
   - *.unity3d -> *.png, *.txt
   - *.awb, *.acb -> *.wav
@@ -21,23 +21,23 @@
 
 <BR><BR><BR>
 
-## 필수 요구사항
+## ⚠ 필수 요구사항 ⚠
 [![icon_item_91001](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/89c074f2-f869-4377-8e10-fc6a1d7e5de4)](https://github.com/IZH318/priconne-asset-extractor/releases)
-#### 추출 도구는 상단 쥬얼 아이콘을 클릭 또는 본 Repositories의 Releases로 이동하십시오. <br> <br> <br>
+### ※ 추출 도구는 상단 쥬얼 아이콘을 클릭 또는 본 Repositories의 Releases로 이동하십시오. <br> <br> <br>
 
-#### ※ 본 도구를 사용할 때 필요한 모든 파일들은 zip 파일 내 \01_Install 폴더에 압축 되어 있습니다.
-#### 제공 한 설치 파일들을 신뢰하지 않을 경우 아래 링크를 통해 다운로드 하시기 바랍니다.
-#### ( ※ zip 파일 내 제공 된 파일들을 사용하려는 경우 이 단계를 생략해도 됩니다.)<BR>
+**※ 본 도구를 사용할 때 필요한 모든 파일들은 zip 파일 내 \01_Install 폴더에 압축 되어 있습니다.** <BR>
+**제공 한 설치 파일들을 신뢰하지 않을 경우 아래 링크를 통해 다운로드 하시기 바랍니다.** <BR>
+( ※ zip 파일 내 제공 된 파일들을 사용하려는 경우 이 단계를 생략해도 됩니다.)<BR><BR><BR>
 
 [파일명] python-3.10.11-amd64.exe <BR>
 [URL] https://www.python.org/downloads/release/python-31011/ <BR>
-[안내] Python Script 동작, 파이썬 3.10.xx 버전 중 아무거나 사용 가능 (단, 3.10.xx 버전이 아닌 다른 버전 사용 시 오류 발생 가능성 높음.)
+[안내] Python Script 동작, 파이썬 3.10.xx 버전 중 아무거나 사용 가능 (단, 3.10.xx 버전이 아닌 다른 버전 사용 시 오류 발생 가능성 높음.)<BR><BR><BR>
 
 [파일명] windowsdesktop-runtime-3.1.32-win-x64.exe <BR>
 [URL] https://dotnet.microsoft.com/en-us/download/dotnet/3.1 <BR>
 [안내] Audio 또는 Video 파일을 변환할 때 사용
 
-<BR>
+<BR><BR><BR>
 
 ## 선택 사항 (＼01_Install＼_Option 폴더)
 #### ( ※ zip 파일 내 제공 된 파일들을 사용하려는 경우 이 단계를 생략해도 됩니다.)<BR><BR>
@@ -47,7 +47,7 @@
 
 <BR>
 
-## 주의 사항
+## ❗ 주의 사항 ❗
 ### ※ 반드시 온라인 환경에서 작업해야 합니다. (오프라인 환경은 고민 중 입니다...)
 ### ※ 반드시 저장 장치의 여유 공간을 확인 후 작업하시기 바랍니다.<BR>
 ### ※ 모든 내용은 2024-03-23 AM 02:20 기준이며, 작업 시점에 따라 총 용량 및 파일 개수가 달라집니다.<BR><BR>
@@ -163,7 +163,7 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 
 <BR><BR><BR>
 
-## 사용 방법
+## ⏩ 사용 방법
 01. zip 파일 다운로드 후 적절한 위치에 압축 해제 합니다.<br>
 ![2024-03-23 21 07 06](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/d8c0bd93-36fe-44be-afe1-e6b814415a52) <br> <br> <br>
 
@@ -205,20 +205,20 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 ![2024-03-23 21 13 40](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/657ac134-e740-4914-9094-bfe64fd1dfab) <br>
 ![2024-03-23 21 13 58](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/3e2b1fce-0ba5-4152-bc4e-ead27f5030ba) <br> <br>
 
-※ 작업하고자 하는 menifest의 최소 여유 공간을 확인하지 않았을 경우 반드시 주의 사항을 확인 후 작업하십시오.<br><br>
+※ 작업하고자 하는 menifest의 최소 여유 공간을 확인하지 않았을 경우 반드시 주의 사항을 확인 후 작업하십시오.<br><br> <BR>
  
 ![_2024_03_23_21_15_29_34-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/025f37d3-648f-470f-83ad-e6ecf3f67755) <br>
-(* Ex. banner2_assetmanifest manifest 파일 명 입력) <br> <br>
+(* Ex. banner2_assetmanifest manifest 파일 명 입력) <br> <br><BR>
 
 ![2024-03-23 21 34 48](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/c1cd31f9-8e3b-4d40-96b1-26c9546f8d05) <br>
-만약 위 사진처럼 예상치 못한 오류로 인해 작업이 중단 또는 멈춘다면 창을 닫고 다시 열어 다시 작업 해 주시기 바랍니다. <br> <br>
+만약 위 사진처럼 예상치 못한 오류로 인해 작업이 중단 또는 멈춘다면 창을 닫고 다시 열어 다시 작업 해 주시기 바랍니다. <br> <br> <BR>
 
 ![2024-03-23 21 15 49](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/a5c05a23-1043-40a5-a754-ccbb35861f11) <br>
 ![2024-03-23 21 15 58](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/36d200ae-b3d2-46dc-b1bf-a613e4caa1ba) <br>
 작업이 성공적으로 끝나면 새로운 폴더와 함께 원본 파일 및 변환 된 파일을 확인할 수 있습니다. <br> <br> <br>
 
 ## 선택 작업
-아래 작업은 필수 작업은 아니며, 필요에 따라 사용하시면 됩니다.<br>
+아래 작업은 필수 작업은 아니며, 필요에 따라 사용하시면 됩니다.<br><BR><BR>
 
 
 **[선택 작업]** 원본 Resource 파일을 모두 제거하려는 경우 03_Priconne_Original_Resource_Remover.bat 파일을 실행하여 원본 Resource 파일을 제거합니다.<br><br>
