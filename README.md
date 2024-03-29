@@ -205,7 +205,7 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 ![2024-03-23 21 13 40](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/657ac134-e740-4914-9094-bfe64fd1dfab) <br>
 ![2024-03-23 21 13 58](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/3e2b1fce-0ba5-4152-bc4e-ead27f5030ba) <br> <br>
 
-※ 작업하고자 하는 menifest의 최소 여유 공간을 확인하지 않았을 경우 [여기]([https://github.com/IZH318/PRICONNE_EXTRACTION_TOOLS/edit/main/README.md#%EC%A3%BC%EC%9D%98-%EC%82%AC%ED%95%AD](https://github.com/IZH318/PRICONNE_EXTRACTION_TOOLS/tree/main?tab=readme-ov-file#%EC%A3%BC%EC%9D%98-%EC%82%AC%ED%95%AD)) 를 클릭하여 반드시 확인하십시오.<br><br>
+※ 작업하고자 하는 menifest의 최소 여유 공간을 확인하지 않았을 경우 반드시 주의 사항을 확인 후 작업하십시오.<br><br>
  
 ![_2024_03_23_21_15_29_34-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/025f37d3-648f-470f-83ad-e6ecf3f67755) <br>
 (* Ex. banner2_assetmanifest manifest 파일 명 입력) <br> <br>
