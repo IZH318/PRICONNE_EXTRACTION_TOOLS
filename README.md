@@ -202,20 +202,20 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 ![2024-03-23 21 13 40](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/657ac134-e740-4914-9094-bfe64fd1dfab) <BR>
 ![2024-03-23 21 13 58](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/3e2b1fce-0ba5-4152-bc4e-ead27f5030ba) <BR><BR>
 
-**[ 🛑 경고 🛑 ] 작업하고자 하는 menifest의 최소 여유 공간을 확인하지 않았을 경우 반드시 주의 사항을 확인 후 작업하십시오.** <BR><BR><BR>
+**[ 🛑 경고 🛑 ] 작업하고자 하는 menifest의 최소 여유 공간을 확인하지 않았을 경우 반드시 `❗ 주의 사항 ❗`을 확인 후 작업하십시오.** <BR><BR><BR>
  
 ![_2024_03_23_21_15_29_34-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/025f37d3-648f-470f-83ad-e6ecf3f67755) <BR>
-(📌`banner2_assetmanifest` 입력 결과) <BR><BR><BR>
+(📌 `banner2_assetmanifest` 입력 결과) <BR><BR><BR>
 
 ![2024-03-23 21 34 48](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/c1cd31f9-8e3b-4d40-96b1-26c9546f8d05) <BR>
 **만약 위 사진처럼 예상치 못한 오류로 인해 작업이 중단 또는 멈춘다면 창을 닫고 다시 열어 다시 작업 해 주시기 바랍니다.** <BR><BR><BR>
 
 ![2024-03-23 21 15 49](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/a5c05a23-1043-40a5-a754-ccbb35861f11) <BR>
 ![2024-03-23 21 15 58](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/36d200ae-b3d2-46dc-b1bf-a613e4caa1ba) <BR>
-(📌`banner2_assetmanifest` 입력 결과) <BR><BR>
+(📌 `banner2_assetmanifest` 입력 결과) <BR><BR>
 
 ![2024-03-30 02 06 07](https://github.com/IZH318/PRICONNE_EXTRACTION_TOOLS/assets/99892351/edae366b-51c7-4b14-b0dc-517a204c05ea) <BR>
-(📌`movie2manifest` 입력 결과) <BR><BR>
+(📌 `movie2manifest` 입력 결과) <BR><BR>
 
 작업이 성공적으로 끝나면 새로운 폴더와 함께 원본 파일 및 변환 된 파일을 확인할 수 있습니다.
 
@@ -227,12 +227,16 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 **[선택 작업]** <BR>
 원본 Resource 파일을 모두 제거하려는 경우 `03_Priconne_Original_Resource_Remover.bat` 파일을 실행하여 원본 Resource 파일을 제거합니다. <BR><BR>
 ![2024-03-23 21 16 09](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/23a983ed-5d14-445e-8b22-ff94c48fdffc) <BR>
-![_2024_03_23_21_40_55_699-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/138d888e-9da5-41ed-9871-ba3dd0ab1cf5) <BR><BR>
+![_2024_03_23_21_40_55_699-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/138d888e-9da5-41ed-9871-ba3dd0ab1cf5)
+
+<BR><BR><BR>
 
 **[선택 작업]** <BR>
 캐릭터 명을 모두 추출하고 싶다면 `04_Find_Character_List.py` 파일을 실행합니다. <BR><BR>
 ![2024-03-23 21 17 06](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/218c4b3d-c335-49fb-8189-f66cea4085cd) <BR>
-![_2024_03_23_21_45_30_866-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/2914305b-b991-4b95-9c42-0e72141c17ad) <BR><BR>
+![_2024_03_23_21_45_30_866-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/2914305b-b991-4b95-9c42-0e72141c17ad)
+
+<BR><BR><BR>
 
 **[선택 작업]** <BR>
 입력 한 캐릭터명 전체 또는 일부를 기준으로 대사 정보 및 Audio 파일 정보를 찾고싶다면 `05_Find_Character_Names_in_Storydata.py` 파일을 실행합니다. <BR><BR>
@@ -240,7 +244,7 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 ![SHANA_2024_03_23_21_50_37_194-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/a9da55db-3b00-441e-848d-17378091521c) <BR>
 
 예를 들어, 'コッコロ(=콧코로)'를 입력하지 않고, 'コ'만 입력 후 검색을 하면 모든 캐릭터 이름 중 'コ'가 포함 된 캐릭터 모두 결과값을 반환합니다. <BR>
-(📌위 GIF에 녹화 된 내용 기준으로 'コッコロ(콧코로)', 'ペコリーヌ(=페코린느)', 'マコト(=마코토)', 'ミヤコ(=미야코)' 가 포함 된 결과가 출력 된 것을 확인할 수 있습니다.)
+(📌 위 GIF에 녹화 된 내용 기준으로 'コッコロ(콧코로)', 'ペコリーヌ(=페코린느)', 'マコト(=마코토)', 'ミヤコ(=미야코)' 가 포함 된 결과가 출력 된 것을 확인할 수 있습니다.)
 
 <BR><BR><BR>
 
@@ -429,5 +433,5 @@ if __name__ == "__main__":
 <BR><BR><BR>
 
 ## Special Thanks to
-★ https://github.com/lskyset <BR>
-★ Princess Connect! Re:Dive Game Users <BR>
+✨ https://github.com/lskyset <BR>
+✨ Princess Connect! Re:Dive Game Users <BR>
