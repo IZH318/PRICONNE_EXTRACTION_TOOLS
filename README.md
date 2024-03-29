@@ -1,18 +1,16 @@
 # 프린세스 커넥트! Re:Dive Asset 추출기 (개발 및 수정중)
-게임 '프린세스 커넥트! Re:Dive'의 원본 Asset을 다운로드 받은 후 Resource를 추출 및 변환하는 도구입니다.
+게임 '프린세스 커넥트! Re:Dive'의 일본 서버 원본 Asset을 다운로드 받은 후 Resource를 추출 및 변환하는 도구입니다.
 
 (* 미처 발견하지 못한 오류가 있을 수 있습니다.)
 
 <BR>
 
 ## 주요 기능
-※ 반드시 온라인 환경에서 작업해야 합니다. (오프라인 환경은 고민 중 입니다...)
-
 ▶ {manifest_filter}에 입력 된 값을 기준으로 원본 Resource 파일을 다운로드 받습니다.<BR>
 (* 다운로드 되는 파일 정보는 다음과 같습니다.)
   - Assetbundles (*.unity3d)
   - Audio (*.awb, *.acb)
-  - Video (*.usm)
+  - Video (*.usm)<BR><BR><BR>
 
 ▶ 다운로드 된 원본 파일을 변환합니다.<BR>
 (* 확장자 별 변환 과정은 다음과 같습니다.)
@@ -21,7 +19,7 @@
   - *.usm -> *.mp4
   - *storydata.bytes -> *.json
 
-<BR>
+<BR><BR><BR>
 
 ## 필수 요구사항
 #### ※ 본 도구를 사용할 때 필요한 모든 파일들은 zip 파일 내 \01_Install 폴더에 압축 되어 있습니다.<BR>
@@ -46,52 +44,11 @@
 
 <BR>
 
-## 사용 방법
-01. zip 파일 다운로드 후 적절한 위치에 압축 해제 합니다.<br>
-![2024-03-23 21 07 06](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/d8c0bd93-36fe-44be-afe1-e6b814415a52) <br> <br> <br>
-
-[![icon_item_91001](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/89c074f2-f869-4377-8e10-fc6a1d7e5de4)](https://github.com/IZH318/priconne-asset-extractor/releases)
-#### 파일 다운로드는 상단 쥬얼 아이콘을 클릭 또는 Releases로 이동하십시오. <br> <br> <br>
-
-
-
-2. 01_Install 폴더로 이동 후 본문 상단 필수 요구사항과 선택 사항을 참고하여 파일을 설치합니다.<br>
-![2024-03-23 21 07 37](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/d3ebf8ce-080e-49c0-9f6b-3ebb3444e335) <br>
-![2024-03-23 21 10 09](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/c7556e8e-76d8-4fe3-b074-3d26fa43425a) <br>
-**[ ※ 주의 ] Add python.exe to PATH 에 반드시 체크 후 Install Now 클릭 <br>**
-(* 미처 누르지 못했다면 설치파일을 다시 실행 또는 소프트웨어 제거 후 재 설치) <br> <br> <br>
-
-3. 모두 설치가 끝났다면 02_Tools 폴더로 이동합니다. <br>
-![2024-03-23 21 11 06](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/3ab44e7f-c5fb-473e-895b-db47198eb569) <br> <br> <br>
-
-
-
-4. Priconne_Extractor.zip 파일을 압축 해제 합니다.<br>
-   **[ ※ 주의 ] 모든 데이터들은 Priconne_Extractor.zip 파일을 압축 해제 한 경로에 저장됩니다.** <br>
-   ![2024-03-23 21 11 31](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/328960d5-7a1d-4e5c-a1cb-054582b98dcd) <br> <br> <br>
-
-
-
-6. 00_Install_required_Python_packages.bat 파일을 실행하여 Python Package를 설치합니다. <br>
-![2024-03-23 21 12 30](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/2f38827c-7cee-4b4a-9366-f1b56ca6d95f) <br>
-![2024-03-23 21 12 42](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/c223c840-cf1d-4abf-b5d6-3d295be3c43d) <br>
-![2024-03-23 21 12 58](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/44477a1c-76e8-45a1-a494-3ac7b4b595c2) <br>
-(* 필요 Python Package 설치가 끝나면 위와 같은 화면이 표기됩니다.) <br> <br> <br>
-
-
-
-7. 01_Priconne_Manifest_Extractor.py 파일을 실행하여 필요한 manifest 정보를 다운로드 받습니다. <br>
-![2024-03-23 21 13 09](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/513b5cfc-62f1-4060-9060-7e8eeed8aeb2) <br>
-![2024-03-23 21 13 25](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/83372f25-6c7e-4572-a2e1-ca001935adda) <br>
-(* manifest 추출이 끝나면 위와 같이 파일이 생깁니다.) <br> <br> <br>
-
-
-
-8. 02_Priconne_Original_Resource_Download_to_Convert.py 파일을 실행하여 다운로드 및 변환 할 manifest 정보를 입력하고 Enter키를 누릅니다.<br>
-   **( ※ manifest 파일 별 필요 최소 저장장치 용량은 아래 표를 참고하십시오. (2024-03-23 AM 02:20 기준, 오차 있을 수 있음))** <br> <br>
-![2024-03-23 21 13 40](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/657ac134-e740-4914-9094-bfe64fd1dfab) <br>
-![2024-03-23 21 13 58](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/3e2b1fce-0ba5-4152-bc4e-ead27f5030ba) <br> <br>
-
+## 주의 사항
+### ※ 반드시 온라인 환경에서 작업해야 합니다. (오프라인 환경은 고민 중 입니다...)
+### ※ 반드시 저장 장치의 여유 공간을 확인 후 작업하시기 바랍니다.<BR>
+### ※ 모든 내용은 2024-03-23 AM 02:20 기준이며, 작업 시점에 따라 총 용량 및 파일 개수가 달라집니다.<BR><BR>
+**각 manifest 파일 별 필요 최소 여유 공간은 아래 표를 참고하십시오.** <br>
 | [MANIFEST FILE NAME] | 디스크 할당 크기 | 내용 |
 | --- | --- | --- |
 all2_assetmanifest | 3.02GB (3,246,854,144 바이트) | 파일 27,334, 폴더 2,525
@@ -135,20 +92,120 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 ㄴ \s | 2.30GB (2,478,477,312 바이트) | 파일 3,179, 폴더 1
 ㄴ \v | 177GB (190,203,895,808 바이트) | 파일 292,452, 폴더 3
 
-<br>
+<br><br><br>
+
+
+**전체 manifest 파일 작업 시 필요 최소 여유 공간은 아래 표를 참고하십시오.** <br>
 
 | 구분 | 디스크 할당 크기 | 내용 |
 | --- | --- | --- |
 원본 파일 삭제 한 전체 파일 크기 | 275GB (295,939,731,456 바이트) | 파일 367,270, 폴더 23,818
 원본 파일 삭제 안 한 전체 파일 크기 | 363GB (389,966,929,920 바이트) | 파일 449,763, 폴더 23,862
 
-<br>
+<br><br><br>
 
-※ 개인적인 추측(* 확실하지 않음)<br>
-\a = Asset<br>
-\b = BGM<br>
-\s = SE(Sound Effect)<br>
-\v = Voice<br><br>
+**각 manifest의 구조는 아래 목록을 클릭하여 참고하십시오.** <br>
+<details>
+  <summary>📄 트리구조 (Level 2)</summary><br>
+📁 Priconne_Extractor<br>
+  ├📁 a<br>
+  │  ├📁 all<br>
+  │  ├📁 animation<br>
+  │  ├📁 arcade<br>
+  │  ├📁 banner<br>
+  │  ├📁 bg<br>
+  │  ├📁 caravan<br>
+  │  ├📁 clanbattle<br>
+  │  ├📁 colosseum<br>
+  │  ├📁 comic<br>
+  │  ├📁 consttext<br>
+  │  ├📁 dailytask<br>
+  │  ├📁 dungeon<br>
+  │  ├📁 event<br>
+  │  ├📁 font<br>
+  │  ├📁 gacha<br>
+  │  ├📁 howtoplay<br>
+  │  ├📁 icon<br>
+  │  ├📁 jukebox<br>
+  │  ├📁 knightenhance<br>
+  │  ├📁 lipsyncothers<br>
+  │  ├📁 loginbonus<br>
+  │  ├📁 masterdata<br>
+  │  ├📁 minigame<br>
+  │  ├📁 resourcedefine<br>
+  │  ├📁 room<br>
+  │  ├📁 roomeffect<br>
+  │  ├📁 roomfinger<br>
+  │  ├📁 roomgrid<br>
+  │  ├📁 roomicon<br>
+  │  ├📁 roomitem<br>
+  │  ├📁 roomthumb<br>
+  │  ├📁 shader<br>
+  │  ├📁 spine<br>
+  │  ├📁 storydata<br>
+  │  ├📁 talentquest<br>
+  │  ├📁 travel<br>
+  │  ├📁 unit<br>
+  │  └📁 wac<br>
+  ├📁 assets<br>
+  ├📁 b<br>
+  ├📁 m<br>
+  │  └📁 t<br>
+  ├📁 manifest<br>
+  ├📁 s<br>
+  └📁 v<br>
+　   └📁 t
+
+</details>
+
+<BR><BR><BR>
+
+## 사용 방법
+01. zip 파일 다운로드 후 적절한 위치에 압축 해제 합니다.<br>
+![2024-03-23 21 07 06](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/d8c0bd93-36fe-44be-afe1-e6b814415a52) <br> <br> <br>
+
+[![icon_item_91001](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/89c074f2-f869-4377-8e10-fc6a1d7e5de4)](https://github.com/IZH318/priconne-asset-extractor/releases)
+#### 파일 다운로드는 상단 쥬얼 아이콘을 클릭 또는 Releases로 이동하십시오. <br> <br> <br>
+
+
+
+2. 01_Install 폴더로 이동 후 본문 상단 필수 요구사항과 선택 사항을 참고하여 파일을 설치합니다.<br>
+![2024-03-23 21 07 37](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/d3ebf8ce-080e-49c0-9f6b-3ebb3444e335) <br>
+![2024-03-23 21 10 09](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/c7556e8e-76d8-4fe3-b074-3d26fa43425a) <br>
+**[ ※ 주의 ] Add python.exe to PATH 에 반드시 체크 후 Install Now 클릭 <br>**
+(* 미처 누르지 못했다면 설치파일을 다시 실행 또는 소프트웨어 제거 후 재 설치) <br> <br> <br>
+
+3. 모두 설치가 끝났다면 02_Tools 폴더로 이동합니다. <br>
+![2024-03-23 21 11 06](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/3ab44e7f-c5fb-473e-895b-db47198eb569) <br> <br> <br>
+
+
+
+4. Priconne_Extractor.zip 파일을 압축 해제 합니다.<br>
+   **[ ※ 주의 ] 모든 데이터들은 Priconne_Extractor.zip 파일을 압축 해제 한 경로에 저장됩니다.** <br>
+   ![2024-03-23 21 11 31](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/328960d5-7a1d-4e5c-a1cb-054582b98dcd) <br> <br> <br>
+
+
+
+6. 00_Install_required_Python_packages.bat 파일을 실행하여 Python Package를 설치합니다. <br>
+![2024-03-23 21 12 30](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/2f38827c-7cee-4b4a-9366-f1b56ca6d95f) <br>
+![2024-03-23 21 12 42](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/c223c840-cf1d-4abf-b5d6-3d295be3c43d) <br>
+![2024-03-23 21 12 58](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/44477a1c-76e8-45a1-a494-3ac7b4b595c2) <br>
+(* 필요 Python Package 설치가 끝나면 위와 같은 화면이 표기됩니다.) <br> <br> <br>
+
+
+
+7. 01_Priconne_Manifest_Extractor.py 파일을 실행하여 필요한 manifest 정보를 다운로드 받습니다. <br>
+![2024-03-23 21 13 09](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/513b5cfc-62f1-4060-9060-7e8eeed8aeb2) <br>
+![2024-03-23 21 13 25](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/83372f25-6c7e-4572-a2e1-ca001935adda) <br>
+(* manifest 추출이 끝나면 위와 같이 파일이 생깁니다.) <br> <br> <br>
+
+
+
+8. 02_Priconne_Original_Resource_Download_to_Convert.py 파일을 실행하여 다운로드 및 변환 할 manifest 정보를 입력하고 Enter키를 누릅니다.<br>
+![2024-03-23 21 13 40](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/657ac134-e740-4914-9094-bfe64fd1dfab) <br>
+![2024-03-23 21 13 58](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/3e2b1fce-0ba5-4152-bc4e-ead27f5030ba) <br> <br>
+
+※ 작업하고자 하는 menifest의 최소 여유 공간을 확인하지 않았을 경우 [여기](https://github.com/IZH318/PRICONNE_EXTRACTION_TOOLS/edit/main/README.md#%EC%A3%BC%EC%9D%98-%EC%82%AC%ED%95%AD) 를 클릭하여 반드시 확인하십시오.<br><br>
  
 ![_2024_03_23_21_15_29_34-ezgif com-video-to-gif-converter](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/025f37d3-648f-470f-83ad-e6ecf3f67755) <br>
 (* Ex. banner2_assetmanifest manifest 파일 명 입력) <br> <br>
