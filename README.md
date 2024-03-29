@@ -3,7 +3,7 @@
 
 (* 미처 발견하지 못한 오류가 있을 수 있습니다.)
 
-<BR>
+<BR><BR><BR>
 
 ## 🔍 주요 기능
 ■ 가장 먼저 `{manifest_filter}`에 입력 된 값을 기준으로 원본 Resource 파일을 다운로드 받습니다. <BR>
@@ -19,7 +19,7 @@
   - *.usm -> *.mp4
   - *storydata.bytes -> *.json
 
-<BR>
+<BR><BR><BR>
 
 ## ⚠ 요구사항 ⚠
 ### ☑ 필수 (`📁\01_Install`) <BR>
@@ -35,7 +35,7 @@
 | `dotNET 3.1` | [Download](https://dotnet.microsoft.com/en-us/download/dotnet/3.1) | 필수     | ◼ Audio 파일 또는 Video 파일을 변환할 때 사용                                                  |
 | `K-Lite Codec Pack 18.2.0 (Mega)`    | [Download](https://codecguide.com/download_k-lite_codec_pack_basic.htm) | 선택     | ◼ Audio 및 Video 코덱 설치<BR>◼ 추출 된 Audio 파일 또는 Video 파일이 정상적으로 재생되지 않을 때 설치<BR>◼ 18.2.0 버전이 아니어도 됨. |
 
-<BR>
+<BR><BR><BR>
 
 ## ❗ 주의 사항 ❗
 ### ※ 반드시 온라인 환경에서 작업해야 합니다. _(오프라인 환경은 고민 중 입니다...)_
@@ -158,7 +158,7 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 **모든 manifest의 구조와 파일 목록을 확인하고 싶으시다면 아래 목록을 클릭하여 참고하십시오.** <BR>
 [🗂 All Manifests (Full)](https://github.com/IZH318/PRICONNE_EXTRACTION_TOOLS/blob/main/All%20Manifests%20(Full).txt)
 
-<BR>
+<BR><BR><BR>
 
 ## ⏩ 사용 방법
 01. zip 파일 다운로드 후 적절한 위치에 압축 해제 합니다. <BR>
@@ -221,7 +221,7 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 
 작업이 성공적으로 끝나면 새로운 폴더와 함께 원본 파일 및 변환 된 파일을 확인할 수 있습니다.
 
-<BR>
+<BR><BR><BR>
 
 ## 선택 작업
 **아래 작업은 필수 작업은 아니며, 필요에 따라 사용하시면 됩니다.** <BR><BR>
@@ -384,50 +384,38 @@ if __name__ == "__main__":
 
 <BR>
 
+<details>
+  <summary>🛠 *.usm 파일을 *.mp4 파일이 아닌 다른 확장자로 변환하고자 하는 경우?</summary><BR>
 
+`PRICONNE_EXTRACTION_TOOLS`에 포함 된 `UsmToolkit`은 FFmpeg 표준 구문을 사용합니다.<BR><BR>
 
+01. `\Priconne_Extractor\src\files`로 이동 후 `movie_file.py`파일 내용 중 `extract_path`부분 수정 <BR>
+02. `\Priconne_Extractor\usmtoolkit`로 이동 후 `config.json`파일 내용 중 `OutputFormat`부분 수정<BR><BR>
+```
+    # 만약, *.mp4 파일이 아닌 *.mkv 파일로 저장하고 싶다면?
 
+    # ▼ movie_file.py 파일 내용 중 일부 ▼
+    def extract(self) -> None:
+        self.download()
+        extract_path = self.path.parent.parent / (self.path.stem + ".mkv")  # <--- 확장자 수정
+        if extract_path.exists():
+            return
 
+    # ▼ config.json 파일 내용 ▼
+{
+    "VideoParameter" : "-c:v copy",
+    "AudioParameter" : "-c:a ac3 -b:a 640k -af pan='stereo|FL=FL+FC+0.5*BL+BR|FR=FR+LFE+0.5*BL+BR'",
+    "OutputFormat" : "mkv"
+}
+    # ▲ OutputFormat을 mkv로 수정 ▲
+```
 
+<BR>
 
+**보다 자세한 설정은 FFmpeg 표준 구문을 확인하시기 바랍니다.** <BR>
+[📚 FFmpeg 표준 구문 보러 가기](https://ffmpeg.org/ffmpeg-codecs.html)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <BR> <BR> <BR>
-
-
-🛠 *.usm 파일을 *.mp4 파일이 아닌 다른 확장자로 변환하고자 하는 경우? <BR> <BR> <BR>
-
-
-
-<BR><BR><BR>
-
-■ {manifest_filter}에 입력 된 값을 기준으로 모든 원본 Resource가 다운로드 됐다면 원본 파일을 변환합니다. <BR>
-(* 확장자 별 변환 과정은 다음과 같습니다.)
-  - *.unity3d -> *.png, *.txt
-  - *.awb, *.acb -> *.wav
-  - *.usm -> *.mp4
-  - *storydata.bytes -> *.json
+</details>
 
 <BR><BR><BR>
 
@@ -440,7 +428,7 @@ if __name__ == "__main__":
 - 아레나, 프레나
 - 클랜전
 
-<BR>
+<BR><BR><BR>
 
 ## Special Thanks to
 ★ https://github.com/lskyset <BR>
