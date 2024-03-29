@@ -214,10 +214,10 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 
 ![2024-03-23 21 15 49](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/a5c05a23-1043-40a5-a754-ccbb35861f11) <BR>
 ![2024-03-23 21 15 58](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/36d200ae-b3d2-46dc-b1bf-a613e4caa1ba) <BR>
-(📌`banner2_assetmanifest` 입력 결과) <BR><BR><BR>
+(📌`banner2_assetmanifest` 입력 결과) <BR><BR>
 
 ![2024-03-30 02 06 07](https://github.com/IZH318/PRICONNE_EXTRACTION_TOOLS/assets/99892351/edae366b-51c7-4b14-b0dc-517a204c05ea) <BR>
-(📌`movie2manifest` 입력 결과) <BR><BR><BR>
+(📌`movie2manifest` 입력 결과) <BR><BR>
 
 작업이 성공적으로 끝나면 새로운 폴더와 함께 원본 파일 및 변환 된 파일을 확인할 수 있습니다.
 
@@ -246,16 +246,177 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 
 <BR><BR><BR>
 
-## ⚙ 고급 설정
-### ※ 이 작업은 Python 언어와 작성 된 Script의 내용을 어느정도 이해하고 응용할 수 있는 분들께 추천드리는 작업입니다. <BR>
+## ⚙ 고급 설정 (선택)
+### ※ 이 작업은 Python 언어로 작성 된 Script의 내용을 이해하고 응용할 수 있는 분들께 추천드리는 작업입니다. <BR><BR>
+
+### ❗ 필수 작업 ❗ <BR>
+![2024-03-30 02 18 44](https://github.com/IZH318/PRICONNE_EXTRACTION_TOOLS/assets/99892351/935aef2e-f653-448e-8c0d-8c1a7d8fb5c0) <BR>
+`파일 -> 옵션 -> 보기 -> 숨김 파일 및 폴더`상태를 `숨김 파일, 폴더 및 드라이브 표시`로 변경 후 확인 <BR><BR>
+
+![2024-03-30 02 23 35](https://github.com/IZH318/PRICONNE_EXTRACTION_TOOLS/assets/99892351/020ff6da-1dcd-4b5a-834a-abaabd2e2c70) <BR>
+수정하고자 하는 파일 선택 후 `마우스 우클릭 -> 속성 -> 일반 -> 특성`항목 중 `읽기 전용(R)`상태 해제 후 확인 <BR><BR>
+
+**위 작업을 모두 끝낸 후 작업하시기 바랍니다.**
+
+<BR>
+
+<details>
+  <summary>🛠 특정 파일만 다운로드 받은 다음 변환하고자 하는 경우?</summary><BR>
+
+`02_Priconne_Original_Resource_Download_to_Convert.py`파일 실행 후 아래 내용 중 `assetbundle_filter=""`와 `file_filter=""`부분 수정 <BR><BR><BR>
+```
+    # 만약, png 파일만 저장되게 하고 싶다면?
+
+    dm.datamine(
+        manifest_filter=manifest_filter,
+        assetbundle_filter="",
+        file_filter=".png",
+    )
+```
+
+```
+    # manifest를 입력받지 않고 특정 manifest(`bg2_assetmanifest`)를 바로 다운로드 받고 싶다면?
+
+    ▼ 여기서부터 ▼
+    while True:
+        manifest_filter = input(">>> ")
+
+        if manifest_filter not in allowed_filenames:
+            print("파일명이 올바르지 않습니다. ")
+            print()
+            continue
+
+        break
+
+    print()
+    ▲ 여기까지 모두 삭제 ▲
+
+    dm.datamine(
+        # ▼ ▼ ▼ manifest_filter=manifest_filter를 manifest_filter=""로 변경 후 쌍 따옴표 안에 특정 manifest 파일 명 삽입
+        manifest_filter="bg2_assetmanifest",
+        assetbundle_filter="",
+        file_filter="",
+    )
+```
+
+**보다 자세한 설정은 원 제작자가 제공 한 샘플(`example.py`)을 확인하시기 바랍니다.** <BR>
+<details>
+  <summary>📔 example.py</summary><BR>
+
+```
+from src import Dataminer
+
+
+def examples():
+    # initializes the dataminer
+    dm = Dataminer()
+
+    # Extracting a whole manifest
+    dm.datamine(
+        manifest_filter="wac",
+        assetbundle_filter="",
+        file_filter="",
+    )
+
+    # Extracting images
+    dm.datamine(
+        manifest_filter="bg",
+        assetbundle_filter=r"still_unit_1001[0-9]{2}",
+        file_filter=r"still_unit_1001[0-9]{2}\.png",
+    )
+
+    # Sound and Movie manifests only contain regular files so the assetbundle filter isn't needed.
+    dm.datamine(
+        manifest_filter="sound",
+        assetbundle_filter="",
+        file_filter=r"bgm_M36\.",
+    )
+    dm.datamine(
+        manifest_filter="sound",
+        assetbundle_filter="",
+        file_filter="bgm_M152",
+    )
+    dm.datamine(
+        manifest_filter="movie",
+        assetbundle_filter="",
+        file_filter=r"character_1001[0-9]{2}",
+    )
+
+    def sd_skel_example():
+        # 000000 files contains animations shared by all units
+        dm.datamine(
+            manifest_filter="spine",
+            assetbundle_filter="000000",
+            file_filter="cysp",
+        )
+
+        # the common cysp contain animations shared by units from the same same class (eg. sword units)
+        dm.datamine(
+            manifest_filter="spine",
+            assetbundle_filter="common",
+            file_filter="cysp",
+        )
+
+        # filters for the specific unit animations, include all uncap versions
+        dm.datamine(
+            manifest_filter="spine",
+            assetbundle_filter=r"1001[0-9]{2}",
+            file_filter=r"1001[0-9]{2}",
+        )
+
+        # assemble .cysp files into a .skel file for a given unit_id
+        dm.get_skel(100111)
+
+    sd_skel_example()
+
+
+if __name__ == "__main__":
+    # keep all scripting in this scope to avoid bugs with multiprocessing
+    examples()
+
+```
+
+</details>
+
+<BR>
+
+</details>
+
+<BR>
 
 
 
-🛠 특정 파일만 다운로드 받은 다음 변환하고자 하는 경우? <BR>
 
 
 
-🛠 *.usm 파일을 *.mp4 파일이 아닌 다른 확장자로 변환하고자 하는 경우? <BR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <BR> <BR> <BR>
+
+
+🛠 *.usm 파일을 *.mp4 파일이 아닌 다른 확장자로 변환하고자 하는 경우? <BR> <BR> <BR>
 
 
 
