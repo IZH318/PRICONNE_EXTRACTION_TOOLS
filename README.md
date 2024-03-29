@@ -39,7 +39,7 @@
 
 <BR><BR><BR>
 
-## 선택 사항 (`📁\01_Install\_Option`)
+## 선택 요구사항 (`📁\01_Install\_Option`)
 #### ( ※ zip 파일 내 제공 된 파일들을 사용하려는 경우 이 단계를 생략해도 됩니다.) <BR><BR>
 **[파일명]** `K-Lite_Codec_Pack_1820_Mega.exe` <BR>
 **[URL]** https://codecguide.com/download_k-lite_codec_pack_basic.htm <BR>
