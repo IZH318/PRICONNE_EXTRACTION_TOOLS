@@ -1,4 +1,4 @@
-# 프린세스 커넥트! Re:Dive Asset 추출기 (개발 및 수정중)
+# 프린세스 커넥트! Re:Dive (JP) Asset 추출 도구 (개발 및 수정중)
 게임 '프린세스 커넥트! Re:Dive'의 일본 서버 원본 Asset을 다운로드 받은 후 Resource를 추출 및 변환하는 도구입니다.
 
 (* 미처 발견하지 못한 오류가 있을 수 있습니다.)
@@ -22,9 +22,12 @@
 <BR><BR><BR>
 
 ## 필수 요구사항
+[![icon_item_91001](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/89c074f2-f869-4377-8e10-fc6a1d7e5de4)](https://github.com/IZH318/priconne-asset-extractor/releases)
+#### 추출 도구는 상단 쥬얼 아이콘을 클릭 또는 본 Repositories의 Releases로 이동하십시오. <br> <br> <br>
+
 #### ※ 본 도구를 사용할 때 필요한 모든 파일들은 zip 파일 내 \01_Install 폴더에 압축 되어 있습니다.<BR>
-#### 제공 한 설치 파일들을 신뢰하지 않을 경우 아래 링크를 통해 다운로드 하시기 바랍니다.<BR><BR>
-#### ( ※ zip 파일 내 제공 된 파일들을 사용하려는 경우 이 단계를 생략해도 됩니다.)<BR><BR>
+#### 제공 한 설치 파일들을 신뢰하지 않을 경우 아래 링크를 통해 다운로드 하시기 바랍니다.<BR>
+#### ( ※ zip 파일 내 제공 된 파일들을 사용하려는 경우 이 단계를 생략해도 됩니다.)<BR>
 
 [파일명] python-3.10.11-amd64.exe <BR>
 [URL] https://www.python.org/downloads/release/python-31011/ <BR>
@@ -32,7 +35,7 @@
 
 [파일명] windowsdesktop-runtime-3.1.32-win-x64.exe <BR>
 [URL] https://dotnet.microsoft.com/en-us/download/dotnet/3.1 <BR>
-[기능] Audio 또는 Video 파일을 변환할 때 사용
+[안내] Audio 또는 Video 파일을 변환할 때 사용
 
 <BR>
 
@@ -40,7 +43,7 @@
 #### ( ※ zip 파일 내 제공 된 파일들을 사용하려는 경우 이 단계를 생략해도 됩니다.)<BR><BR>
 [파일명] K-Lite_Codec_Pack_1820_Mega.exe <BR>
 [URL] https://codecguide.com/download_k-lite_codec_pack_basic.htm <BR>
-[기능] Audio 및 Video 코덱 설치 (* 추출 된 Audio 또는 Video 파일이 정상적으로 재생되지 않을 시 설치)
+[안내] Audio 및 Video 코덱 설치 (* 추출 된 Audio 또는 Video 파일이 정상적으로 재생되지 않을 시 설치)
 
 <BR>
 
@@ -163,9 +166,6 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 ## 사용 방법
 01. zip 파일 다운로드 후 적절한 위치에 압축 해제 합니다.<br>
 ![2024-03-23 21 07 06](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/d8c0bd93-36fe-44be-afe1-e6b814415a52) <br> <br> <br>
-
-[![icon_item_91001](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/89c074f2-f869-4377-8e10-fc6a1d7e5de4)](https://github.com/IZH318/priconne-asset-extractor/releases)
-#### 파일 다운로드는 상단 쥬얼 아이콘을 클릭 또는 Releases로 이동하십시오. <br> <br> <br>
 
 
 
