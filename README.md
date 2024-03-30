@@ -50,7 +50,7 @@ a 폴더에 다운로드 되는 모든 manifest들은 없는 파일만 다시 �
 
 `02. 알 수 없는 문제 발생`<BR>
 Scrpit를 통해 다운로드 또는 변환 과정을 거치는 중 알 수 없는 오류가 발생하여 진행이 멈추거나 아무 경고 없이 창이 꺼짐, 작업이 끝나지 않았는데 창이 꺼짐등 과 같은 문제가 발생 함.<BR>
-이 경우 창을 닫고 다시 실행하여 동일 작업을 거쳐주면 정상적으로 진행하나, `01. 다운로드`에서 언급 한 `movie2manifest`와 `soundmanifest`는 필요 이상으로 시간이 많이 소요되는 단점이 있음.<BR>
+이 경우 창을 닫고 다시 실행하여 동일 작업을 거쳐주면 정상적으로 진행하나, `💾 다운로드`에서 언급 한 `movie2manifest`와 `soundmanifest`는 필요 이상으로 시간이 많이 소요되는 단점이 있음.<BR>
 
 <BR>
 
@@ -202,7 +202,7 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 
 
 
-2. `01_Install` 폴더로 이동 후 본문 상단 필수 요구사항과 선택 사항을 참고하여 파일을 설치합니다. <BR>
+2. `01_Install` 폴더로 이동 후 본문 상단 `💾 다운로드`을 참고하여 파일을 설치합니다. <BR>
 ![2024-03-23 21 07 37](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/d3ebf8ce-080e-49c0-9f6b-3ebb3444e335) <BR>
 ![2024-03-23 21 10 09](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/c7556e8e-76d8-4fe3-b074-3d26fa43425a) <BR>
 **[ ※ 주의 ] Add python.exe to PATH 에 반드시 체크 후 Install Now 클릭** <BR>
@@ -221,7 +221,7 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 
 
 
-6. `00_Install_required_Python_packages.bat` 파일을 실행하여 Python Package를 설치합니다. <BR>
+5. `00_Install_required_Python_packages.bat` 파일을 실행하여 Python Package를 설치합니다. <BR>
 ![2024-03-23 21 12 30](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/2f38827c-7cee-4b4a-9366-f1b56ca6d95f) <BR>
 ![2024-03-23 21 12 42](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/c223c840-cf1d-4abf-b5d6-3d295be3c43d) <BR>
 ![2024-03-23 21 12 58](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/44477a1c-76e8-45a1-a494-3ac7b4b595c2) <BR>
@@ -229,14 +229,14 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 
 
 
-7. `01_Priconne_Manifest_Extractor.py` 파일을 실행하여 필요한 manifest 정보를 다운로드 받습니다. <BR>
+6. `01_Priconne_Manifest_Extractor.py` 파일을 실행하여 필요한 manifest 정보를 다운로드 받습니다. <BR>
 ![2024-03-23 21 13 09](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/513b5cfc-62f1-4060-9060-7e8eeed8aeb2) <BR>
 ![2024-03-23 21 13 25](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/83372f25-6c7e-4572-a2e1-ca001935adda) <BR>
 (📌 manifest 추출이 끝나면 위와 같이 파일이 생깁니다.) <BR><BR><BR>
 
 
 
-8. `02_Priconne_Original_Resource_Download_to_Convert.py` 파일을 실행하여 다운로드 및 변환 할 manifest 정보를 입력하고 Enter키를 누릅니다. <BR>
+7. `02_Priconne_Original_Resource_Download_to_Convert.py` 파일을 실행하여 다운로드 및 변환 할 manifest 정보를 입력하고 Enter키를 누릅니다. <BR>
 ![2024-03-23 21 13 40](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/657ac134-e740-4914-9094-bfe64fd1dfab) <BR>
 ![2024-03-23 21 13 58](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/3e2b1fce-0ba5-4152-bc4e-ead27f5030ba) <BR><BR>
 
