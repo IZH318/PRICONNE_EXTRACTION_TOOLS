@@ -21,7 +21,7 @@
 
 <BR><BR><BR>
 
-## ⚠ 요구사항 ⚠
+## 💾 다운로드
 [![icon_item_91001](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/89c074f2-f869-4377-8e10-fc6a1d7e5de4)](https://github.com/IZH318/priconne-asset-extractor/releases)
 ### ※ 추출 도구는 상단 쥬얼 아이콘을 클릭 또는 본 Repositories의 Releases로 이동하여 다운로드 하십시오. <br><br>
 ### ※ 본 도구를 사용할 때 필요한 모든 파일들은 zip 파일 내 `📁\01_Install` 폴더에 포함되어 있습니다. <BR>
@@ -29,14 +29,40 @@
 
 | Program                                | URL                                                | 필수여부 | 비고                                                                                           |
 |----------------------------------------|----------------------------------------------------|----------|------------------------------------------------------------------------------------------------|
-| `Python 3.10.11`            | [Download](https://www.python.org/downloads/release/python-31011/)   | 필수     | ◼ Python Script 동작, 파이썬 3.10.xx 버전 중 아무거나 사용 가능<BR>◼ 단, 3.10.xx 버전이 아닌 다른 버전은 확인한 적 없으므로 정상적인 작동을 보장하지 못 함. |
+| `Python 3.10.11`            | [Download](https://www.python.org/downloads/release/python-31011/)   | 필수     | ◼ Python Script 동작, 파이썬 3.10.xx 버전 중 아무거나 사용 가능<BR>◼ 단, 3.10.xx 버전이 아닌 다른 버전은 확인한 적 없으므로 정상적인 작동을 보장하지 못 함 |
 | `dotNET 3.1` | [Download](https://dotnet.microsoft.com/en-us/download/dotnet/3.1) | 필수     | ◼ Audio 파일 또는 Video 파일을 변환할 때 사용                                                  |
-| `K-Lite Codec Pack 18.2.0 (Mega)`    | [Download](https://codecguide.com/download_k-lite_codec_pack_basic.htm) | 선택     | ◼ Audio 및 Video 코덱 설치<BR>◼ 추출 된 Audio 파일 또는 Video 파일이 정상적으로 재생되지 않을 때 설치<BR>◼ 18.2.0 버전이 아니어도 됨. |
+| `K-Lite Codec Pack 18.2.0 (Mega)`    | [Download](https://codecguide.com/download_k-lite_codec_pack_basic.htm) | 선택     | ◼ Audio 및 Video 코덱 설치<BR>◼ 추출 된 Audio 파일 또는 Video 파일이 정상적으로 재생되지 않을 때 설치<BR>◼ 18.2.0 버전이 아니어도 됨 |
 
 <BR><BR><BR>
 
 ## ❗ 주의 사항 ❗
 ### ※ 반드시 온라인 환경에서 작업해야 합니다. _(오프라인 환경은 고민 중 입니다...)_
+### ※ 발견 된 문제를 미리 확인하여 작업 중 적절히 대처할 수 있도록 준비하십시오.
+
+<details>
+  <summary>📛 지금까지 발견 된 문제</summary><BR>
+
+
+`01. 다운로드`<BR>
+a 폴더에 다운로드 되는 모든 manifest들은 없는 파일만 다시 다운로드 후 변환 과정을 거치나, `movie2manifest`와 `soundmanifest`는 파일 존재 여부 상관 없이 모든 파일을 다시 처음부터 다운로드 후 변환 과정을 거쳐 시간이 많이 소요 됨.
+
+<BR>
+
+`02. 알 수 없는 문제 발생`<BR>
+Scrpit를 통해 다운로드 또는 변환 과정을 거치는 중 알 수 없는 오류가 발생하여 진행이 멈추거나 아무 경고 없이 창이 꺼짐, 작업이 끝나지 않았는데 창이 꺼짐등 과 같은 문제가 발생 함.<BR>
+이 경우 창을 닫고 다시 실행하여 동일 작업을 거쳐주면 정상적으로 진행하나, `01. 다운로드`에서 언급 한 `movie2manifest`와 `soundmanifest`는 필요 이상으로 시간이 많이 소요되는 단점이 있음.<BR>
+
+<BR>
+
+`03. PC 성능 저하`<BR>
+Scrpit를 통해 다운로드 또는 변환 과정을 거치는 중 필요 이상으로 PC Resource를 사용하여 PC 성능이 낮아지는 문제(ex. RAM 점유율 100%, 가상메모리 점유율 상승, CPU 점유율 상승 등)가 발생.<BR>
+특히 저사양 PC 환경이거나, 현재 사용중인 PC의 Windows가 설치 된 `C:\` 또는 `C:\ 하위 폴더 (ex. 바탕화면, 다운로드, 문서 등)`에서 작업을 하는 경우 자주 발견 됨.<BR>
+이 경우 현재 사용중인 PC의 Windows가 설치 된 저장 장치에서 작업하지 않고 다른 저장장치에서 작업하면 해결 됐음.<BR>
+
+</details>
+
+<BR>
+
 ### ※ 반드시 저장 장치의 여유 공간을 확인 후 작업하시기 바랍니다.
 ### ※ 모든 내용은 2024-03-23 AM 02:20 기준이며, 작업 시점에 따라 총 용량 및 파일 개수가 달라집니다. <BR><BR>
 **각 manifest 파일 별 추출 및 변환 파일이 저장되는 필요 최소 여유 공간은 아래 표를 참고하십시오.** <BR>
