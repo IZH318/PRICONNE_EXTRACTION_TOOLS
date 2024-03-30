@@ -180,7 +180,21 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 <BR>
 
 **모든 manifest의 구조와 파일 목록을 확인하고 싶으시다면 아래 목록을 클릭하여 참고하십시오.** <BR>
-[🗂 All Manifests (Full)](https://github.com/IZH318/PRICONNE_EXTRACTION_TOOLS/blob/main/All%20Manifests%20(Full).txt)
+[🗂 All Manifests (Full)](https://github.com/IZH318/PRICONNE_EXTRACTION_TOOLS/blob/main/All%20Manifests%20(Full).txt)  <BR>
+
+ <BR>
+
+<details>
+  <summary>🤔 개인적인 폴더 이름 추측(* 확실하지 않음)</summary><BR>
+
+```
+\a = Asset
+\b = BGM
+\s = SE(Sound Effect)
+\v = Voice
+```
+
+</details>
 
 <BR><BR><BR>
 
