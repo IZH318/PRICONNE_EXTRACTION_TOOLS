@@ -339,7 +339,7 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 ![2024-03-30 02 23 35](https://github.com/IZH318/PRICONNE_EXTRACTION_TOOLS/assets/99892351/020ff6da-1dcd-4b5a-834a-abaabd2e2c70) <BR>
 수정하고자 하는 파일 선택 후 `마우스 우클릭 -> 속성 -> 일반 -> 특성`항목 중 `읽기 전용(R)`상태 해제 후 확인 <BR><BR>
 
-**위 작업은 PRICONNE EXTRACTION TOOLS (v1.0.0) 만 해당됩니다.)**
+**위 작업은 PRICONNE EXTRACTION TOOLS (v1.0.0) 만 해당됩니다.**
 
 <BR> <BR> <BR>
 
