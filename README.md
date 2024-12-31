@@ -21,6 +21,46 @@
 
 <BR><BR><BR>
 
+## 🔄 업데이트 내역
+### v1.1.0 (2024-12-31)
+- **공통**
+  - **Asset 다운로드 오류 수정**: https://github.com/lskyset/priconne-asset-extractor/commit/be439ee68c47c861f43b7c270c19c56a87548c0b
+  - **사용자 안내 메시지 추가**: 주요 작업(예: 데이터 다운로드, `Dataminer` 인스턴스 생성 등)에 대해 안내 메시지를 출력하여 작업 상태를 사용자에게 알림.
+  - **예외 처리 추가**: 실행 중 예기치 않은 오류 발생 시 프로그램 종료되지 않도록 `try-except` 블록 추가.
+  - **프로그램 종료 대기**: 작업 완료 및 오류 발생 시 프로그램 종료를 막고, 사용자에게 `Enter`를 눌러 종료하도록 안내하는 기능 추가. <BR> <BR>
+
+- **`05_Find_Character_Names_in_Storydata.py`**
+  - **데이터 검색 로직 수정**: `*.json` 파일에서 검색 한 캐릭터의 이름 발견 시 가장 첫 번째 내역만 반환되는 문제 수정. <BR> <BR>
+
+- **`.\src\dataminer.py`**
+  - **병렬 처리 방식 변경**:
+    - `multiprocessing.Pool`에서 `concurrent.futures.ProcessPoolExecutor`로 병렬 처리 방식 변경
+    - `Pool.imap`을 `executor.map`으로 변경하여 코드 가독성 및 유연성 개선
+    - 병렬 처리 효율성 개선 및 예외 처리 용이성 향상
+  
+  - **메모리 최적화**:
+    - `__slots__` 추가로 메모리 사용 최적화
+    - 객체 속성 동적 할당을 제한하여 메모리 효율성 증대 <BR> <BR>
+
+- **`.\usmtoolkit\ffmpeg.exe`**
+  - 최신 버전(* 2024-12-27)으로 업데이트 <BR> <BR>
+ 
+- **기타**
+  - `README.md` 수정
+
+<BR>
+
+<details>
+<summary>📜 이전 업데이트 내역 - 클릭하여 열기</summary>
+
+### v1.0.0 (2024-03-30)
+- **기타**
+  - `프린세스 커넥트! Re:Dive (JP) Asset 추출 도구` 게시
+  
+</details>
+
+<BR><BR><BR>
+
 ## 💾 다운로드
 [![icon_item_91001](https://github.com/IZH318/priconne-asset-extractor/assets/99892351/89c074f2-f869-4377-8e10-fc6a1d7e5de4)](https://github.com/IZH318/priconne-asset-extractor/releases)
 ### ※ 추출 도구는 상단 쥬얼 아이콘을 클릭 또는 본 Repositories의 Releases로 이동하여 다운로드 하십시오. <br><br>
@@ -31,7 +71,7 @@
 |----------------------------------------|----------------------------------------------------|----------|------------------------------------------------------------------------------------------------|
 | `Python 3.10.11`            | [Download](https://www.python.org/downloads/release/python-31011/)   | 필수     | ◼ Python Script 동작, 파이썬 3.10.xx 버전 중 아무거나 사용 가능<BR>◼ 단, 3.10.xx 버전이 아닌 다른 버전은 확인한 적 없으므로 정상적인 작동을 보장하지 못 함 |
 | `dotNET 3.1` | [Download](https://dotnet.microsoft.com/en-us/download/dotnet/3.1) | 필수     | ◼ Audio 파일 또는 Video 파일을 변환할 때 사용                                                  |
-| `K-Lite Codec Pack 18.2.0 (Mega)`    | [Download](https://codecguide.com/download_k-lite_codec_pack_basic.htm) | 선택     | ◼ Audio 및 Video 코덱 설치<BR>◼ 추출 된 Audio 파일 또는 Video 파일이 정상적으로 재생되지 않을 때 설치<BR>◼ 18.2.0 버전이 아니어도 됨 |
+| `K-Lite Codec Pack (Standard)`    | [Download](https://codecguide.com/download_k-lite_codec_pack_standard.htm) | 선택     | ◼ Audio 및 Video 코덱 설치<BR>◼ 추출 된 Audio 파일 또는 Video 파일이 정상적으로 재생되지 않을 때 설치<BR> |
 
 <BR><BR><BR>
 
@@ -64,7 +104,9 @@ Scrpit를 통해 다운로드 또는 변환 과정을 거치는 중 필요 이�
 <BR>
 
 ### ※ 반드시 저장 장치의 여유 공간을 확인 후 작업하시기 바랍니다.
-### ※ 모든 내용은 2024-03-23 AM 02:20 기준이며, 작업 시점에 따라 총 용량 및 파일 개수가 달라집니다. <BR><BR>
+### ※ 모든 내용은 2024-03-23 AM 02:20 기준이며, 작업 시점에 따라 총 용량 및 파일 개수가 달라집니다. <BR> <BR>
+### ※ 작업 시점(* 2024-12-31 AM 03:51) 기준, Video 및 Audio Asset만 모두 정상적으로 다운로드 되며, Unity Asset Resource과 관련 된 모든 manifest_assetmanifest 요소들은 접근 권한 문제로 일부 파일만 다운로드 됨. <BR><BR>
+
 **각 manifest 파일 별 추출 및 변환 파일이 저장되는 필요 최소 여유 공간은 아래 표를 참고하십시오.** <BR>
 | [MANIFEST FILE NAME] | 디스크 할당 크기 | 내용 |
 | --- | --- | --- |
@@ -290,15 +332,16 @@ soundmanifest | 239GB (256,754,122,752 바이트) | 파일 298,681, 폴더 8
 ### ※ 이 작업은 Python 언어로 작성 된 Script의 내용을 이해하고 응용할 수 있는 분들께 추천드리는 작업입니다. <BR><BR>
 
 ### ❗ 필수 작업 ❗ <BR>
+### 아래 작업은 PRICONNE EXTRACTION TOOLS (v1.0.0) 만 해당됩니다. <BR>
 ![2024-03-30 02 18 44](https://github.com/IZH318/PRICONNE_EXTRACTION_TOOLS/assets/99892351/935aef2e-f653-448e-8c0d-8c1a7d8fb5c0) <BR>
 `파일 -> 옵션 -> 보기 -> 숨김 파일 및 폴더`상태를 `숨김 파일, 폴더 및 드라이브 표시`로 변경 후 확인 <BR><BR>
 
 ![2024-03-30 02 23 35](https://github.com/IZH318/PRICONNE_EXTRACTION_TOOLS/assets/99892351/020ff6da-1dcd-4b5a-834a-abaabd2e2c70) <BR>
 수정하고자 하는 파일 선택 후 `마우스 우클릭 -> 속성 -> 일반 -> 특성`항목 중 `읽기 전용(R)`상태 해제 후 확인 <BR><BR>
 
-**위 작업을 모두 끝낸 후 작업하시기 바랍니다.**
+**위 작업은 PRICONNE EXTRACTION TOOLS (v1.0.0) 만 해당됩니다.)**
 
-<BR>
+<BR> <BR> <BR>
 
 <details>
   <summary>🛠 특정 파일만 다운로드 받은 다음 변환하고자 하는 경우?</summary><BR>
